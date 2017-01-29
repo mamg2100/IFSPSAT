@@ -1,0 +1,10 @@
+# Cada comentário seguinte se aplica a cada linha abaixo respectivamente
+# Ativa o módulo de reescrita da URL
+# Determina que o rewrite só se aplicará se nao (!) existir um arquivo (-f) com aquele nome
+# Determina que o rewrite só se aplicará se nao (!) existir um diretório (-d) com aquele nome
+# Redireciona o usuário para index.php?params=$1 para qualquer URL entrado.
+
+RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^(.*)$ /mvc/index.php/$1 [L] 

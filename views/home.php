@@ -1,0 +1,1 @@
+<h1 class="welcome">Bem vindo ao SAT - Sistema de Acompanhamento de TCC</h1>
